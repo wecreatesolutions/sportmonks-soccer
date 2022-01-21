@@ -46,7 +46,6 @@ class Fixture extends SoccerClient
     public function getByDate(string $date)
     {
         $date = SoccerApiHelper::verifyDate($date);
-        var_dump($date);
         $url = "fixtures/date/{$date}";
         return $this->call($url);
     }
