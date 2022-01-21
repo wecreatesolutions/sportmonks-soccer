@@ -119,6 +119,17 @@ class SoccerClient
     }
 
     /**
+     * @param int $groupId
+     * @return SoccerClient
+     */
+    public function setGroup(int $groupId): self
+    {
+        // Add group ID
+        $this->query['group_id'] = $groupId;
+        return $this;
+    }
+
+    /**
      * @param int $page
      * @return $this
      */
